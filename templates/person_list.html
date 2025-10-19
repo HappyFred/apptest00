@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>List of People</h2>
+
+    <p><em>Click a person's name to see all their details</em></p>
+    <p>Page Type 2: Display all data from SELECT query.</p>
+
+        <table class="table simple-table">   <!-- Bootstrap style and our own style applied -->
+        <tr>
+            <!-- Table column headings -->
+            <th>Name</th>
+            <th>Room</th>
+        </tr>
+        {% for person in person_list %}
+            <tr>
+                <td>{{ person.name }}</td>
+                <td>{{ person.room }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+{% endblock %}
