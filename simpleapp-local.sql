@@ -1,0 +1,15 @@
+DROP SCHEMA IF EXISTS simpleapp;
+CREATE SCHEMA simpleapp;
+USE simpleapp;
+
+CREATE TABLE people (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(50) DEFAULT NULL,
+  room VARCHAR(10) DEFAULT NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO people VALUES(123,"Lee","L168");
+INSERT INTO people VALUES(822,"Mike","L022");
+INSERT INTO people VALUES(719,"Pen","L003"); 
+
